@@ -64,6 +64,7 @@ body {
     gap: 25px;
 }
 
+/* transicion de color */
 .navegacion a {
     text-decoration: none;
     color: #1a365d;
@@ -314,6 +315,7 @@ body {
     gap: 6px;
 }
 
+/* transicion de color boton */
 .enviar {
     background-color: #1a365d;
     color: #ffffff;
@@ -330,7 +332,6 @@ body {
 .enviar:hover {
     background-color: #2b6cb0;
 }
-
 
 /* PARTE 3PIE DE PÁGINA */
 .footer-principal {
@@ -376,6 +377,7 @@ body {
     gap: 15px;
 }
 
+/*trasnformacion escala*/
 .redes-sociales img {
     width: 32px;
     height: 32px;
@@ -410,8 +412,7 @@ body {
     }
 }
 
-/*animacion de la pagina 2*/
-
+/*trasnformacion escala*/
 .servicios .tarjeta { 
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
@@ -419,9 +420,11 @@ body {
     transform: translateY(-5px); 
     box-shadow: 0 10px 22px rgba(26, 54, 93, 0.15); 
 }
+
 .servicios .tarjeta p { 
     margin-bottom: 20px; 
 }
+
 .btn-servicio { 
     display: block; text-align: center; 
     text-decoration: none; 

@@ -412,6 +412,8 @@ body {
     }
 }
 
+@media (max-width: 768px) { .servicios { grid-template-columns: 1fr; } }
+
 /*trasnformacion escala*/
 .servicios .tarjeta { 
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
@@ -424,11 +426,3 @@ body {
 .servicios .tarjeta p { 
     margin-bottom: 20px; 
 }
-
-.btn-servicio { 
-    display: block; text-align: center; 
-    text-decoration: none; 
-    margin-top: auto; 
-    letter-spacing: 1px; 
-}
-@media (max-width: 768px) { .servicios { grid-template-columns: 1fr; } }

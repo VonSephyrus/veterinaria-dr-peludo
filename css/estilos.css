@@ -236,16 +236,6 @@ body {
     text-align: justify;
 }
 
-.lista li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #2b6cb0;
-    font-weight: bold;
-    font-size: 1.3rem;
-}
-
 /* FORMULARIO DE RESERVA */
 .formulario {
     display: flex;

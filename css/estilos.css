@@ -321,6 +321,21 @@ body {
     background-color: #2b6cb0;
 }
 
+/*trasnformacion escala*/
+.Doble-Cuadro .tarjeta, .servicios .tarjeta { 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.Doble-Cuadro .tarjeta:hover,
+.servicios .tarjeta:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 22px rgba(26, 54, 93, 0.15); 
+}
+
+.Doble-Cuadro .tarjeta p, .servicios .tarjeta p { 
+    margin-bottom: 20px; 
+}
+
 /* PARTE 3PIE DE PÁGINA */
 .footer-principal {
     background-color: #BDD7EE;
@@ -397,19 +412,4 @@ body {
     .servicios { 
         grid-template-columns: 1fr; 
     }  
-}
-
-/*trasnformacion escala*/
-.Doble-Cuadro .tarjeta, .servicios .tarjeta { 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-}
-
-.Doble-Cuadro .tarjeta:hover,
-.servicios .tarjeta:hover { 
-    transform: translateY(-5px); 
-    box-shadow: 0 10px 22px rgba(26, 54, 93, 0.15); 
-}
-
-.Doble-Cuadro .tarjeta p, .servicios .tarjeta p { 
-    margin-bottom: 20px; 
 }

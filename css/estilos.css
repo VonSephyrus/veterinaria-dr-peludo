@@ -38,7 +38,7 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 1.1;
-    cursor: default;
+    cursor: pointer;
     user-select: none;
 }
 

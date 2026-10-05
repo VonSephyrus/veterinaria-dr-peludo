@@ -403,7 +403,7 @@ body {
         flex-direction: column;
         gap: 15px;
     }  
-    .seccion-doble {
+    .Doble-Cuadro {
         grid-template-columns: 1fr;
     }
     .footer-contenido {

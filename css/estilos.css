@@ -11,14 +11,14 @@ body {
     line-height: 1.6;
 }
 
-/* Contenedor centralizado para limitar el ancho */
+/* Centra el contenido y limita su ancho. */
 .contenedor {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
 }
 
-/* [PARTE 1 CABECERA] */
+/* PARTE 1: CABECERA. */
 .header-principal {
     background-color: #BDD7EE;
     padding: 15px 0;
@@ -31,7 +31,7 @@ body {
     align-items: center;
 }
 
-/* Estilos del Logo */
+/* Estilos del logo. */
 .logo-texto {
     display: flex;
     flex-direction: column;
@@ -55,30 +55,32 @@ body {
     margin-top: 2px;
 }
 
-/* Navegación y Enlaces */
+/* Navegación y enlaces. */
 .navegacion ul {
     list-style: none;
     display: flex;
     gap: 25px;
 }
 
-/* Media Query para cambiar tamaño letra */
+/* Ajustes del tamaño de letra de la navegación. */
 @media (width < 520px) {
-  .navegacion {
-    font-size: 0.75rem;
-  }
+    .navegacion {
+        font-size: 0.75rem;
+    }
 }
-@media (width >= 520px) {
-  .navegacion a {
-    font-size: 0.95rem;
-  }
+
+@media (width >=520px) {
+    .navegacion a {
+        font-size: 0.95rem;
+    }
 }
-/* transicion de color */
+
+/* Estilos y transición de color de los enlaces. */
 .navegacion a {
-  text-decoration: none;
-  color: #1a365d;
-  font-weight: 700;
-  transition: color 0.3s ease;
+    text-decoration: none;
+    color: #1a365d;
+    font-weight: 700;
+    transition: color 0.3s ease;
 }
 
 .navegacion a:hover,
@@ -87,7 +89,7 @@ body {
     border-bottom: 2px solid #0056b3;
 }
 
-/* PARTE 2 PRINCIPAL*/
+/* PARTE 2: CONTENIDO PRINCIPAL. */
 .contenedor-principal {
     width: 90%;
     max-width: 1100px;
@@ -97,7 +99,7 @@ body {
     gap: 40px;
 }
 
-/* BANNER DE BIENVENIDA */
+/* Banner de bienvenida. */
 .banner {
     position: relative;
     width: 100%;
@@ -140,7 +142,7 @@ body {
     color: #232f45;
 }
 
-/* FRASE PARA DAR CONFIANZA */
+/* Frase para transmitir confianza. */
 .frase {
     background-color: #ffffff;
     border-radius: 20px;
@@ -164,14 +166,14 @@ body {
     font-size: 1.05rem;
 }
 
-/* SECCIÓN SOBRE NOSOTROS Y ¿POR QUÉ ELEGIRNOS? */
+/* Secciones "Sobre nosotros" y "¿Por qué elegirnos?". */
 .Doble-Cuadro {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
 }
 
-/* Tarjetas/Cajas blancas genéricas */
+/* Estilos generales de las tarjetas. */
 .tarjeta {
     background-color: #ffffff;
     border-radius: 20px;
@@ -188,11 +190,11 @@ body {
     text-align: center;
 }
 
-/* Sobre Nosotros */
+/* Imagen de la sección "Sobre nosotros". */
 .tarjeta img {
     width: 100%;
     height: auto;
-    aspect-ratio: 16 / 10;  
+    aspect-ratio: 16 / 10;
     object-fit: cover;
     object-position: top center;
     border-radius: 8px;
@@ -203,10 +205,9 @@ body {
     font-size: 0.95rem;
     color: #4a5568;
     text-align: justify;
-    text-align: center;
 }
 
-/* ¿POR QUÉ ELEGIRNOS? (ESTILOS DE LISTA) video */
+/* Estilos del video y de la lista de motivos para elegirnos. */
 .video {
     position: relative;
     width: 100%;
@@ -230,7 +231,6 @@ body {
 
 .lista {
     list-style: none;
-    padding: 0;
     margin-top: 10px;
 }
 
@@ -239,12 +239,12 @@ body {
     padding-left: 28px;
     margin-bottom: 12px;
     font-size: 0.93rem;
-    color: lch(35.89% 12.38 272.52);
+    color: #4a5568;
     line-height: 1.5;
     text-align: justify;
 }
 
-/* FORMULARIO DE RESERVA */
+/* Formulario de reserva. */
 .formulario {
     display: flex;
     justify-content: center;
@@ -275,7 +275,7 @@ body {
     color: #1a365d;
 }
 
-/* Estilos compartidos entre input y textarea */
+/* Estilos compartidos por los campos de texto y el área de texto. */
 .campo input[type="text"],
 .campo textarea {
     width: 100%;
@@ -313,7 +313,7 @@ body {
     gap: 6px;
 }
 
-/* transicion de color boton */
+/* Estilos y transición de color del botón. */
 .enviar {
     background-color: #1a365d;
     color: #ffffff;
@@ -331,22 +331,21 @@ body {
     background-color: #2b6cb0;
 }
 
-/*trasnformacion escala*/
-.Doble-Cuadro .tarjeta, .servicios .tarjeta { 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+/* Efecto de elevación de las tarjetas al pasar el cursor. */
+.Doble-Cuadro .tarjeta {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.Doble-Cuadro .tarjeta:hover,
-.servicios .tarjeta:hover { 
-    transform: translateY(-5px); 
-    box-shadow: 0 10px 22px rgba(26, 54, 93, 0.15); 
+.Doble-Cuadro .tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(26, 54, 93, 0.15);
 }
 
-.Doble-Cuadro .tarjeta p, .servicios .tarjeta p { 
-    margin-bottom: 20px; 
+.Doble-Cuadro .tarjeta p {
+    margin-bottom: 20px;
 }
 
-/* PARTE 3PIE DE PÁGINA */
+/* PARTE 3: PIE DE PÁGINA. */
 .footer-principal {
     background-color: #BDD7EE;
     padding-top: 30px;
@@ -361,7 +360,7 @@ body {
     padding-bottom: 25px;
 }
 
-/* TAMAÑO DEL LOGO EXCLUSIVO PARA EL FOOTER */
+/* Tamaño del logo del pie de página. */
 .logo-footer .logo-titulo {
     font-size: 1.95rem;
 }
@@ -388,7 +387,7 @@ body {
     gap: 15px;
 }
 
-/*trasnformacion escala*/
+/* Efecto de ampliación de los iconos de redes sociales. */
 .redes-sociales img {
     width: 32px;
     height: 32px;
@@ -407,35 +406,38 @@ body {
     color: #2d3748;
 }
 
-/* ADAPTABILIDAD DISPOSITIVOS MÓVILES */
+/* Adaptación a dispositivos móviles. */
 @media (max-width: 768px) {
     .header-contenido {
         flex-direction: column;
         gap: 15px;
-    }  
+    }
+
     .banner {
         height: clamp(260px, 55vw, 320px);
     }
+
     .texto {
         width: calc(100% - 32px);
         padding: clamp(16px, 4vw, 25px) clamp(16px, 5vw, 40px);
     }
+
     .texto h1 {
         font-size: clamp(1.4rem, 4vw, 1.8rem);
         line-height: 1.2;
     }
+
     .texto p {
         font-size: 1rem;
     }
+
     .Doble-Cuadro {
         grid-template-columns: 1fr;
     }
+
     .footer-contenido {
         grid-template-columns: 1fr 1fr;
     }
-    .servicios { 
-        grid-template-columns: 1fr; 
-    }  
 }
 
 @media (max-width: 480px) {
@@ -443,14 +445,17 @@ body {
         height: 300px;
         border-radius: 14px;
     }
+
     .texto {
         width: calc(100% - 24px);
         padding: 16px 14px;
         border-radius: 14px;
     }
+
     .texto h1 {
         font-size: 1.35rem;
     }
+
     .texto p {
         font-size: 0.95rem;
     }

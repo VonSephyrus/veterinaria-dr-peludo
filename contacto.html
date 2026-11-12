@@ -66,7 +66,8 @@
         <section class="formulario" id="reserva">
             <div class="tarjeta cuadro">
                 <h3>FORMULARIO DE RESERVA</h3>
-                <form action="javascript:void(0);" onsubmit="this.reset(); return false;" class="reserva">
+                <!-- Mantenemos tu clase 'reserva' tal cual -->
+                <form action="javascript:void(0);" class="reserva">
                     <div class="campo">
                         <label for="nombre">NOMBRE Y APELLIDO:</label>
                         <input type="text" id="nombre" placeholder="Ingresa tu nombre completo" required>
@@ -86,8 +87,13 @@
                         <textarea id="motivo" name="motivo" rows="4"
                             placeholder="Describe brevemente el motivo de la cita..." required></textarea>
                     </div>
-                    <button type="submit" class="enviar">ENVIAR</button>
+                    
+                    <!-- CAMBIO AQUÍ: Reemplazamos el alert directo por nuestra función de java.js -->
+                    <button type="button" class="enviar" onclick="registrarCitaReserva()">ENVIAR</button>
+
                 </form>
+
+                <script src="java/java.js"></script>
             </div>
         </section>
 
@@ -161,3 +167,4 @@
     </footer>
 </body>
 </html>
+

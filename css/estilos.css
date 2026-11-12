@@ -75,6 +75,7 @@ body {
     }
 }
 
+
 /* Estilos y transición de color de los enlaces. */
 .navegacion a {
     text-decoration: none;
@@ -460,3 +461,33 @@ body {
         font-size: 0.95rem;
     }
 }
+
+.contenedor-tabla {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.tabla-veterinaria {
+  text-align: center; /* Centra el contenido dentro de las celdas */
+  width: 100%;       /* Cambiado de 150% a 100% para que respete el max-width */
+  max-width: 1000px;
+  margin: 10px auto;  /* El 'auto' a los lados centra la tabla horizontalmente */
+  border-collapse: collapse; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden; 
+  border: 1px solid #e0e0e0;
+}
+
+/* Forzamos a que los encabezados y celdas tengan el contenido centrado */
+.tabla-veterinaria th,
+.tabla-veterinaria td {
+  text-align: center; /* Asegura el centrado horizontal de textos y botones */
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0; 
+  color: #333333;
+  vertical-align: middle; /* Centrado vertical */
+}
+

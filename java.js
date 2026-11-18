@@ -64,3 +64,24 @@ function registrarCitaReserva() {
     // Limpiar formulario
     document.querySelector("form.reserva").reset();
 }
+
+// 4. SEMANA 14: Para abrir y cerrar menú
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    // Verificamos si los elementos existen en la página actual antes de usar addEventListener
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Opcional: cerrar el menú al hacer clic en un enlace (útil en móvil)
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    }
+});

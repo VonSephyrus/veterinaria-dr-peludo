@@ -16,7 +16,7 @@
     <header class="header-principal">
         <div class="contenedor header-contenido">
 
-            <!-- Logo enlazado a Inicio por comodidad -->
+            <!-- Logo enlazado a Inicio -->
             <div class="logo">
                 <a href="index.html" style="text-decoration: none; color: inherit;">
                     <div class="logo-texto">
@@ -26,8 +26,16 @@
                 </a>
             </div>
 
+            <!-- GENERA BOTÓN EN MÓVIL -->
+            <div class="bars" id="menuToggle">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+
             <!-- NAVEGACIÓN PRINCIPAL -->
-            <nav class="navegacion">
+            <nav class="navegacion" id="navMenu">
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
                     <li><a href="servicios.html" class="activo">SERVICIOS</a></li>
@@ -154,6 +162,10 @@
             <p>&copy; 2026 Veterinaria Dr. Peludo - Jesús María. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- LLAMA A ARCHIVO JAVASCRIPT PARA IMPLEMENTAR MENÚ RESPONSIVO -->
+    <script src="java.js"></script>
+
 </body>
 
 </html>
